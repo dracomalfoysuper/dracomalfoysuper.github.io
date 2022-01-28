@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Document</title>
+      <link rel="stylesheet" href="lib/style.css" />
+      <script src="lib/script.js" defer></script>
+    </head>
+
+    <section class="stage">
+      <div id="home" class="div">
+        <p id="homep" class="p" onclick="startLife()">START</p>
+      </div>
+      <div class="div" id="about">
+        <p class="p" onclick="clearField()">CLEAR</p>
+      </div>
+      <div class="div" id="contact">
+        <p class="p" onclick="pousetimeFunc()">PAUSE</p>
+      </div>
+      <div class="div" id="gallery">
+        <p class="p" onclick="stopLife()">STOP</p>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <canvas id="c1" width="700" height="700"></canvas>
+
+    <section class="stage">
+      <div id="home" class="div">
+        <p id="homep" class="p" onclick="level1()">LEVEL 1</p>
+      </div>
+      <div id="home" class="div">
+        <p id="homep" class="p" onclick="level2()">LEVEL 2</p>
+      </div>
+      <div id="home" class="div">
+        <p id="homep" class="p" onclick="level3()">LEVEL 3</p>
+      </div>
+      <div id="home" class="div">
+        <p id="homep" class="p" onclick="level4()">LEVEL 4</p>
+      </div>
+      <div id="home" class="div">
+        <p id="homep" class="p" onclick="level5()">LEVEL 5</p>
+      </div>
+    </section>
+    <p class="transparent-text"><span id="info"> </span></p>
+    <p>Количество циклов: <span id="count"> 0 </span></p>
+    <p>Популяция: <span id="popul"> 0 </span></p>
+
+  </body>
+</html>
